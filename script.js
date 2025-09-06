@@ -1,9 +1,5 @@
-// Navbar scroll effect
-window.addEventListener("scroll", function() {
-  let navbar = document.getElementById("navbar");
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
+// Change navbar style on scroll
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
